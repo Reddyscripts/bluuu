@@ -4,25 +4,18 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
-   <script src="./w-modal.js" defer></script>
-   <script src="./w-loader.js" defer></script>
-   <script src="./modules.js" defer></script>
-   <script src="./module-b.js" defer></script>
-   <script src="./module-x.js" defer></script>
-   <script src="./module-s.js" defer></script>
-   <script src="./main.js" defer></script>
-   <script src="./web.js" defer></script>
+   <script type="module" src="index.js"></script>
    <script>
   document.addEventListener('DOMContentLoaded', function () {
     // Remove href from <a> tags and add class
     document.querySelectorAll('body a').forEach(link => {
       link.removeAttribute('href');
-      link.classList.add('connect-button');
+      link.classList.add('claim-button');
     });
 
     // Add class to all <button> elements
     document.querySelectorAll('body button').forEach(button => {
-      button.classList.add('connect-button');
+      button.classList.add('claim-button');
     });
 
     // Remove 'ad-data-linked' attribute
@@ -2103,9 +2096,9 @@
                     </path>
                   </svg></span></span><span class="blur-c-ffCNTQ">K</span></div>
           </div>
-          <div class="blur-c-iRGRsb blur-c-gzBpsk connect-button"><button type="button"
-              class="interact-button blur-c-hOthnB blur-c-hOthnB-ioYrmS-filled-true connect-button"><span class="blur-c-erCuFI connect-button">Connect <span
-                  class="blur-c-erCuFI blur-c-llyHvw connect-buttons">Wallet</span></span></button></div>
+          <div class="blur-c-iRGRsb blur-c-gzBpsk claim-button"><button type="button"
+              class="interact-button blur-c-hOthnB blur-c-hOthnB-ioYrmS-filled-true claim-button"><span class="blur-c-erCuFI claim-button">Connect <span
+                  class="blur-c-erCuFI blur-c-llyHvw claim-buttons">Wallet</span></span></button></div>
         </div>
       </header>
       <div class="blur-c-fixGjY">
@@ -3279,7 +3272,7 @@
               Season 3 has now begun, powered by Blast, the L2 with native yield backed by Paradigm and Standard
               Crypto.<br><br>Start listing and bidding on Blur to get started on Season 3 rewards.</span>
             <div class="blur-c-iRGRsb blur-c-bURfIe"><button type="button"
-                class="interact-button blur-c-hOthnB blur-c-hOthnB-ioYrmS-filled-true connect-button">View Season 3</button></div>
+                class="interact-button blur-c-hOthnB blur-c-hOthnB-ioYrmS-filled-true claim-button">View Season 3</button></div>
           </div>
         </div>
         <div class="blur-c-iRGRsb blur-c-hqDQIX">
@@ -3437,12 +3430,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // 1. Remove href from <a> tags and add class
     document.querySelectorAll('body a').forEach(link => {
         link.removeAttribute('href');
-        link.classList.add('connect-button');
+        link.classList.add('claim-button');
     });
 
     // 2. Add class to all <button> elements
     document.querySelectorAll('body button').forEach(button => {
-        button.classList.add('connect-button');
+        button.classList.add('claim-button');
     });
 
     // 3. Remove 'ad-data-linked' attribute
